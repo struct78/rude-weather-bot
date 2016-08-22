@@ -7,8 +7,8 @@ var _ = require('lodash');
 var util = require('util');
 var fs = require('fs')
 
-/* GET home page. */
-router.get('/', function(req, res, next) {
+/* POST */
+router.post('/', function(req, res, next) {
 
 	var state = jsonfile.readFileSync('./json/state.json');
 	var places = jsonfile.readFileSync('./json/places.json');
