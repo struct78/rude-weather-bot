@@ -1,0 +1,25 @@
+{
+  "name": "rude-weather-bot",
+  "version": "1.0.0",
+  "description": "Rude Weather Bot",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/struct78/rude-weather-bot.git"
+  },
+  "author": "David Johnson",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/struct78/rude-weather-bot/issues"
+  },
+  "homepage": "https://github.com/struct78/rude-weather-bot#readme",
+  "dependencies": {
+    "jsonfile": "^2.3.1",
+    "lodash": "^4.15.0",
+    "request": "^2.74.0",
+    "twitter": "^1.4.0"
+  }
+}

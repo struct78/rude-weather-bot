@@ -1,0 +1,1 @@
+5 * * * * /usr/local/bin/node /var/app/current/index.js
