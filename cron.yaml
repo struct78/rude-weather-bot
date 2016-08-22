@@ -1,5 +1,5 @@
 version: 1
 cron:
-  — name: "tweet"
+  - name: "tweet"
     url: "/tweet"
     schedule: "0 * * * *"
