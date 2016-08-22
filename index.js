@@ -108,7 +108,7 @@ var tweet = function(location, weather) {
 		client.post('statuses/update', tweet, function(err, tweet, response) {
 				if (err) {
 					console.error(util.format('[ERROR] %s', err.message));
-					throw err;
+					return;
 				}
 
 				console.log(util.format('[INFO] Tweeted weather for %s', location.name));
