@@ -19,12 +19,12 @@ router.post('/', function(req, res, next) {
 		access_token_secret: process.env.TWITTER_ACCESS_TOKEN_SECRET_RWB
 	});
 
-	var current = places.find(function(d,i) {
+	var location = places.find(function(d,i) {
 		return i === state.id;
 	});
 
 	var profile = {
-		location: current.name,
+		location: location.name,
 		skip_status: true
 	};
 
