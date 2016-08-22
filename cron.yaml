@@ -3,3 +3,6 @@ cron:
   - name: "tweet"
     url: "/tweet"
     schedule: "0 * * * *"
+  - name: "location"
+    url: "/location"
+    schedule: "0 * * * *"

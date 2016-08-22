@@ -6,6 +6,7 @@ var cookieParser = require('cookie-parser');
 var bodyParser = require('body-parser');
 
 var tweet = require('./routes/tweet/index');
+var location = require('./routes/location/index');
 
 var app = express();
 
@@ -18,6 +19,7 @@ app.use(cookieParser());
 app.use(express.static(path.join(__dirname, 'public')));
 
 app.use('/tweet', tweet);
+app.use('/location', location);
 
 // catch 404 and forward to error handler
 app.use(function(req, res, next) {
