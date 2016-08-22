@@ -81,6 +81,11 @@ router.post('/', function(req, res, next) {
 	};
 
 	var tweet = function(location, weather) {
+			if (!weather.query.results) {
+				console.error('[ERROR] No results found');
+				return;
+			}
+
 			var tweet_text = 'Weather for %s\n\n%s %s\n🌡 %d°C | %d°F%s\n💨 %d km/h | %d mi/h\n🌅 %s 🌆 %s';
 			var conditions = weather.query.results.channel.item.condition;
 			var conditions_text = conditions.text;
