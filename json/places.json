@@ -78,4 +78,29 @@
 	"woeid": 28583930,
 	"latitude": -26.7824075,
 	"longitude": 152.873897
+},{
+	"name":"Beaver Bottom (USA)",
+	"woeid": 2360950,
+	"latitude": 38.402221,
+	"longitude": -110.0247143
+},{
+	"name":"Yorkeys Knob (Australia)",
+	"woeid": 1107086,
+	"latitude": -16.8260565,
+	"longitude": 145.6970941
+},{
+	"name":"Felchville (USA)",
+	"woeid": 2402823,
+	"latitude": 42.2978249,
+	"longitude": -71.359299
+},{
+	"name":"Dongo (Congo)",
+	"woeid": 1475696,
+	"latitude": 2.7186104,
+	"longitude": 18.3968424
+},{
+	"name":"Cumbum (India)",
+	"woeid": 2293526,
+	"latitude": 9.7355485,
+	"longitude": 77.2671271
 }]
