@@ -105,6 +105,8 @@ var tweet = function(location, weather) {
 			display_coordinates: true
 		};
 
+		console.log('[INFO] ' + new Date().toUTCString());
+		/*
 		client.post('statuses/update', tweet, function(err, tweet, response) {
 				if (err) {
 					console.error(util.format('[ERROR] %s', err.message));
@@ -112,7 +114,7 @@ var tweet = function(location, weather) {
 				}
 
 				console.log(util.format('[INFO] Tweeted weather for %s', location.name));
-		});
+		});*/
 };
 
 getweather();
