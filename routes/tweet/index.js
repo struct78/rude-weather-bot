@@ -110,16 +110,15 @@ router.post('/', function(req, res, next) {
 				display_coordinates: true
 			};
 
-			console.log('[INFO] ' + new Date().toUTCString());
-			/*
 			client.post('statuses/update', tweet, function(err, tweet, response) {
 					if (err) {
 						console.error(util.format('[ERROR] %s', err.message));
 						return;
 					}
-
+					
+					console.log('[INFO] ' + new Date().toUTCString());
 					console.log(util.format('[INFO] Tweeted weather for %s', location.name));
-			});*/
+			});
 	};
 
 	getweather();
