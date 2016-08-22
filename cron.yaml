@@ -2,4 +2,4 @@ version: 1
 cron:
   - name: "tweet"
     url: "/tweet"
-    schedule: "0 * * * *"
+    schedule: "*/1 * * * *"
