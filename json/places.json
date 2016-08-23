@@ -114,8 +114,48 @@
 	"latitude": 47.6098911,
 	"longitude": -93.6185213
 },{
+	"name":"Little Dick Lake (USA)",
+	"woeid": 2412844,
+	"latitude": 47.6120337,
+	"longitude": -93.627885
+},{
 	"name":"Intercourse (USA)",
 	"woeid": 2427319,
 	"latitude": 40.0368395,
 	"longitude": -76.1275501
+},{
+	"name":"Bastardo (Italy)",
+	"woeid": 710780,
+	"latitude": 42.869803,
+	"longitude": -12.5532192
+},{
+	"name":"Assawoman (USA)",
+	"woeid": 23509338,
+	"latitude": 37.8740351,
+	"longitude": -75.5323278
+},{
+	"name":"Llabià (Spain)",
+	"woeid": 765336,
+	"latitude": 42.0190299,
+	"longitude": 3.0855995
+},{
+	"name":"Beaverlick (USA)",
+	"woeid": 2361057,
+	"latitude": 38.8789512,
+	"longitude": -84.7031449
+},{
+	"name":"Bern Wankdorf (Switzerland)",
+	"woeid": 781788,
+	"latitude": 46.9642826,
+	"longitude": 7.4605101
+},{
+	"name":"Mount Buggery (Australia)",
+	"woeid": 28586296,
+	"latitude": -37.143117,
+	"longitude": 146.5010262
+},{
+	"name":"Sandy Balls Estate (England)",
+	"woeid": 12602169,
+	"latitude": 50.9271517,
+	"longitude": -1.814901
 }]
