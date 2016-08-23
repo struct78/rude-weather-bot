@@ -39,14 +39,14 @@ nodemon ./bin/www
 RWB was designed to run on AWS Elastic Beanstalk worker environment, however you can run it anywhere. You will just need to setup a Cron job to call two URLs once every hour, or however often you want.
 
 | URL | Description |
-|-|-|
+|-----|--------------|
 | /tweet | Updates the internal state, and tweets the weather from the next location |
 | /location | Updates the Twitter account's location |
 
 RWB reads locations from ```json/places.json```. Each location has the following properties:
 
 | Name | Description |
-|-|-|
+|------|--------------|
 | name | Location Name
 | WOEID | Where On Earth Identifier
 | Latitude | Latitude of the location
