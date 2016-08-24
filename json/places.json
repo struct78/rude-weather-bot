@@ -198,4 +198,19 @@
 	"woeid": 40060,
 	"latitude": 54.0193721,
 	"longitude": -0.5876468
+},{
+	"name":"Muff (Ireland)",
+	"woeid": 560645,
+	"latitude": 55.0680679,
+	"longitude": -7.2777046
+},{
+	"name":"Mount Clitoris",
+	"woeid": 1194815,
+	"latitude": 6.945587,
+	"longitude": 120.8261347
+},{
+	"name":"Lake Titicaca (Peru/Bolivia)",
+	"woeid": 1194815,
+	"latitude": -15.9137768,
+	"longitude": -69.8621634
 }]
