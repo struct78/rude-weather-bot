@@ -9,15 +9,20 @@ var fs = require('fs')
 
 /* POST */
 router.post('/', function(req, res, next) {
-
+	// Read the current state
 	var state = jsonfile.readFileSync('./json/state.json');
+
+	// Load locations
 	var places = jsonfile.readFileSync('./json/places.json');
+
+	// Map of text descriptions of the weather to emojis
 	var descriptors =  [{ text: ['Thunderstorms', 'Rain'], emoji: '☔' },
 		{ text: ['Cloudy', 'Mostly Cloudy', 'Showers'], emoji: '☁️' },
 		{ text: ['Partly Cloudy', 'Scattered Showers'], emoji: '☂' },
 		{ text: ['Mostly Sunny'], emoji: '⛅'},
 		{ text: ['Clear', 'Breezy', 'Sunny'], emoji: '☀️' } ]
 
+	// Client setup
 	var client = new Twitter({
 	  consumer_key: process.env.TWITTER_CONSUMER_KEY_RWB,
 	  consumer_secret: process.env.TWITTER_CONSUMER_SECRET_RWB,
@@ -25,16 +30,22 @@ router.post('/', function(req, res, next) {
 		access_token_secret: process.env.TWITTER_ACCESS_TOKEN_SECRET_RWB
 	});
 
+	// Convert farenheit to celsius
 	var farenheit_to_celsius = function(temp) {
 		return Math.round((temp-32)/1.8);
 	};
 
+	// Convert miles per hour to kilometres per hour
 	var mph_to_kph = function(speed) {
 		return Math.round(speed*1.609344);
 	}
 
+	// Get the next location
 	var advance = function() {
+		// Return to the beginning if we're at the end
 		state.id = (state.id==places.length-1) ? 0 : state.id+1;
+
+		// Save the state
 		jsonfile.writeFileSync('./json/state.json', state);
 
 		var current = places.find(function(d,i) {
@@ -53,6 +64,7 @@ router.post('/', function(req, res, next) {
 			env: 'store://datatables.org/alltableswithkeys'
 		};
 
+		// Make the HTTP request to Yahoo Weather API
 		request({ url: url, qs: querystring}, function(err, response, body) {
 			if (err) {
 				console.error(util.format('[ERROR] %s', err.message));
@@ -61,15 +73,18 @@ router.post('/', function(req, res, next) {
 
 			var weather = JSON.parse(response.body);
 
+			// Yahoo will return a weather.error property if something goes wrong
 			if (weather.error) {
 				console.error(util.format('[ERROR] %s', weather.error.description));
 				return;
 			}
 
+			// Tweet the weather
 			tweet(current, JSON.parse(response.body));
 		});
 	}
 
+	// This is here because Yahoo does weird shit with times e.g. 9:4 am instead of 9:04 am
 	var format_time = function(time) {
 		var parts = time.split(' ');
 		var time = parts[0].split(':');
@@ -108,6 +123,7 @@ router.post('/', function(req, res, next) {
 
 			var formatted_tweet = util.format(tweet_text, location.name, emoji, conditions_text, temp_celcius, temp_farenheit, nice, wind_kph, wind_mph, sunrise, sunset);
 
+			// JSON body to post to Twitter API
 			var tweet = {
 				status: formatted_tweet,
 				lat: location.latitude,
@@ -115,6 +131,7 @@ router.post('/', function(req, res, next) {
 				display_coordinates: true
 			};
 
+			// Post to API endpoint
 			client.post('statuses/update', tweet, function(err, tweet, response) {
 					if (err) {
 						console.error(util.format('[ERROR] %s', err.message));
@@ -127,6 +144,8 @@ router.post('/', function(req, res, next) {
 	};
 
 	getweather();
+
+	// Return a response
   res.json({ status: 'success'});
 });
 
