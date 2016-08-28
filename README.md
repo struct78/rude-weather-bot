@@ -8,12 +8,12 @@ http://twitter.com/rudeweatherbot
 First you will need to create a [Twitter application](https://dev.twitter.com), then set the following environment variables to their equivalent values.
 
 ```js
-	var client = new Twitter({
-	  consumer_key: process.env.TWITTER_CONSUMER_KEY_RWB,
-	  consumer_secret: process.env.TWITTER_CONSUMER_SECRET_RWB,
-	  access_token_key: process.env.TWITTER_ACCESS_TOKEN_KEY_RWB,
-	  access_token_secret: process.env.TWITTER_ACCESS_TOKEN_SECRET_RWB
-	});
+var client = new Twitter({
+	consumer_key: process.env.TWITTER_CONSUMER_KEY_RWB,
+	consumer_secret: process.env.TWITTER_CONSUMER_SECRET_RWB,
+	access_token_key: process.env.TWITTER_ACCESS_TOKEN_KEY_RWB,
+	access_token_secret: process.env.TWITTER_ACCESS_TOKEN_SECRET_RWB
+});
 ```
 
 Now clone the repo, and install the dependencies.
