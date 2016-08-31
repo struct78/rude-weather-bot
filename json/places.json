@@ -213,4 +213,34 @@
 	"woeid": 1194815,
 	"latitude": -15.9137768,
 	"longitude": -69.8621634
+},{
+	"name":"Coxsackie (USA)",
+	"woeid": 2386419,
+	"latitude": 42.3558912,
+	"longitude": -73.8289402
+},{
+	"name":"Wilsford Cum Lake (England)",
+	"woeid": 10775,
+	"latitude": 51.1578081,
+	"longitude": -1.8172008
+},{
+	"name":"Wankum (Germany)",
+	"woeid": 703912,
+	"latitude": 51.398748,
+	"longitude": 6.2976443
+},{
+	"name":"Butthole Lane (England)",
+	"woeid": 34562,
+	"latitude": 52.7737746,
+	"longitude": -1.2888395
+},{
+	"name":"Big Beaver (USA)",
+	"woeid": 2363921,
+	"latitude": 40.8204982,
+	"longitude": -80.3955655
+},{
+	"name":"Rooty Hill (Australia)",
+	"woeid": 1098361,
+	"latitude": -33.7721308,
+	"longitude": 150.8274884
 }]
