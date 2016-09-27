@@ -1,4 +1,74 @@
 [{
+	"name":"Butts (USA)",
+	"woeid": 12587887,
+	"latitude": 33.3123309,
+	"longitude": -84.1055867
+},{
+	"name":"Ballplay (USA)",
+	"woeid": 2358754,
+	"latitude": 34.0587452,
+	"longitude": -85.8177218
+},{
+	"name":"Clam Gulch (USA)",
+	"woeid": 2380574,
+	"latitude": 60.2089481,
+	"longitude": -151.4632503
+},{
+	"name":"Three Way (USA)",
+	"woeid": 23418038,
+	"latitude": 35.7721273,
+	"longitude": -88.8764432
+},{
+	"name":"Blue Ball (USA)",
+	"woeid": 2365742,
+	"latitude": 40.1165282,
+	"longitude": -76.0592153
+},{
+	"name":"Weiner (USA)",
+	"woeid": 2516060,
+	"latitude": 35.6196971,
+	"longitude": -90.9141083
+},{
+	"name":"Fort Dick (USA)",
+	"woeid": 2405664,
+	"latitude": 41.8678901,
+	"longitude": -124.1577254
+},{
+	"name":"Clam Beach (USA)",
+	"woeid": 2380572,
+	"latitude": 40.9947191,
+	"longitude": -124.1195848
+},{
+	"name":"Rough and Ready (USA)",
+	"woeid": 2485109,
+	"latitude": 39.2336136,
+	"longitude": -121.1563276
+},{
+	"name":"Shafter (USA)",
+	"woeid": 2491484,
+	"latitude": 35.4814642,
+	"longitude": -119.2675407
+},{
+	"name":"Woody (USA)",
+	"woeid": 2491484,
+	"latitude": 35.704119,
+	"longitude": -118.8430138
+},{
+	"name":"Beaver Creek (USA)",
+	"woeid": 23510679,
+	"latitude": 39.6031746,
+	"longitude": -106.5248271
+},{
+	"name":"Lubers (USA)",
+	"woeid": 2442824,
+	"latitude": 38.1288951,
+	"longitude": -102.9331218
+},{
+	"name":"Lubers (USA)",
+	"woeid": 2442824,
+	"latitude": 38.1288951,
+	"longitude": -102.9331218
+},{
 	"name":"Fucking (Austria)",
 	"woeid": 545111,
 	"latitude": 48.0767635,
@@ -243,4 +313,5 @@
 	"woeid": 1098361,
 	"latitude": -33.7721308,
 	"longitude": 150.8274884
-}]
+}
+]
